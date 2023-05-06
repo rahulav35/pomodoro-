@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Alarm from "@/components/Alarm";
+import ModelSetting from "@/components/ModelSetting";
 import Navigation from "@/components/Navigation";
 import Timer from "@/components/Timer";
 import React, { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
@@ -12,8 +13,23 @@ function index() {
   const [consumedSecond, setConsumedSecond] = useState(0);
   const [ticking, setTicking] = useState(false);
   const [isTimeup, setIsTimeup] = useState(false)
+  const [openSetting, setOpenSetting] = useState<boolean>(false)
 
   const alarmRef = useRef<any>();
+  const pomodoroRef = useRef<any> ();
+  const shortBreakRef = useRef<any> ();
+  const longBreakRef = useRef<any> ();
+
+
+  
+  const updateTimeDefaultValue = ()=> {
+    setPomodoro(pomodoroRef.current.value);
+    setShortBreak(shortBreakRef.current.value);
+    setLongBreak(longBreakRef.current.value);
+    setOpenSetting(false);
+    setSeconds(0);
+    setConsumedSecond(0)
+  }
 
   const [stage, setStage] = useState(0);
   const switchStage = (index: any) => {
@@ -114,7 +130,7 @@ function index() {
     <div className="min-h-screen w-screen flex flex-col justify-center items-center bg-gray-900 ">
       <div className="w-[40%] min-h-screen mx-auto ">
         {" "}
-        <Navigation />
+        <Navigation  setOpenSetting={setOpenSetting}/>
         <Timer
           stage={stage}
           switchStage={switchStage}
@@ -128,6 +144,15 @@ function index() {
         />
         <About />
         <Alarm ref={alarmRef} />
+        <ModelSetting 
+    pomodoroRef={pomodoroRef}
+    shortBreakRef={shortBreakRef}
+    longBreakRef={longBreakRef}
+    openSetting={openSetting} 
+    setOpenSetting={setOpenSetting}
+    updateTimeDefaultValue={updateTimeDefaultValue}
+    />
+
       </div>
     </div>
   );
