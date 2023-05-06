@@ -2,7 +2,7 @@ import React from 'react'
 
 function About() {
   return (
-    <div className='w-11/12 mx-auto mt-5 text-white '>
+    <div className=' mx-auto mt-16 text-white '>
         <span className="text-xl sm:text-2xl font-medium ">
             <span className='border-b-2 border-red-400'>What</span> is Pomodoro Technique?
         </span>
