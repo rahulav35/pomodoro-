@@ -7,7 +7,7 @@ function About() {
             <span className='border-b-2 border-red-400'>What</span> is Pomodoro Technique?
         </span>
         <p className='mt-3 tracking-wide opacity-70 text-xs mb-3'>
-            The Pomodoro Technique is created by Francesco Cirillo for a more productive work and study The technique uses a timer to break down work into intervals, traditionally 25 minutes in length,seperated by short breaks. Each interval is known as a pomodoro, from a Italian word "tomato" , after the tomato shaped kitchen timer that Cirillo used as a university student.
+            The Pomodoro Technique is created by Francesco Cirillo for a more productive work and study The technique uses a timer to break down work into intervals, traditionally 25 minutes in length,seperated by short breaks. Each interval is known as a pomodoro, from a Italian word tomato , after the tomato shaped kitchen timer that Cirillo used as a university student.
         </p>
 
 
@@ -20,7 +20,7 @@ function About() {
             https://pomofocus.io/.
             </a>
             It is open sourse and here is the code.
-            <a href="https://github.com/Chensokheng/pomodoro " target='_blank' className='underline'>
+            <a href="https://github.com/Chensokheng/pomodoro" target='_blank' className='underline'>
             https://github.com/Chensokheng/pomodoro/.
             </a>
         </p>
