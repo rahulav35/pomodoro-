@@ -5,7 +5,7 @@ import Navigation from "@/components/Navigation";
 import Timer from "@/components/Timer";
 import React, { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
 
-function index() {
+function Home() {
   const [pomodoro, setPomodoro] = useState(25);
   const [shortBreak, setShortBreak] = useState(5);
   const [longBreak, setLongBreak] = useState(10);
@@ -158,4 +158,4 @@ function index() {
   );
 }
 
-export default index;
+export default Home;
