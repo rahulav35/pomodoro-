@@ -16,4 +16,4 @@ function Navigation({ setOpenSetting }: { setOpenSetting: Dispatch<SetStateActio
   );
 }
 
-export default Navigation;
+export default React.memo (Navigation) ;

@@ -49,23 +49,23 @@ function Timer({
       <div className=" flex gap-3">
         <button
           onClick={startTimer}
-          className="h-[35px] w-[130px] bg-white text-blue-950 font-bold my-10 text-lg rounded-lg "
+          className="h-[35px] w-[120px] bg-white text-blue-950 font-bold my-10 text-[16px] rounded-lg "
         >
           {ticking ? "STOP" : "START"}
         </button>
         {isTimeup && (
           <FiBellOff
             onClick={muteAlarm}
-            className="text-3xl text-white cursor-pointer ml-2"
+            className="text-xl text-white cursor-pointer ml-2"
           />
         )}
       </div>
       {ticking && (
-        <button onClick={reset} className="text-white -mt-7 uppercase underline">Reset</button>
+        <button onClick={reset} className="text-white text-[15px] -mt-7 uppercase underline ">Reset</button>
 
       )}
       
-    </div>
+    </div> 
   );
 }
 

@@ -54,11 +54,11 @@ const inputs = [
   return (
 
 <>
-<div onClick={()=>setOpenSetting(false)} className={`absolute h-full w-full bg-black bg-opacity-30 top-0 left-0
+<div className={`absolute h-full w-full bg-black bg-opacity-30 top-0 left-0
 
-${openSetting ? "":"hidden"}`}>
+${openSetting ? "":"hidden"}`} >
 
-        <div className={`max-w-xl bg-white  absolute sm:w-96  w-11/12 left-1/2 p-5 rounded-md 
+        <div className={`max-w-xl bg-white  absolute sm:w-96 top-28 right-20 w-11/12 p-5 rounded-md 
     ${openSetting ? "" : "hidden" }`}>
             
 <div className="text-gray-400 flex justify-between items-center">
@@ -95,4 +95,4 @@ ${openSetting ? "":"hidden"}`}>
   )
 }
 
-export default ModelSetting
+export default React.memo (ModelSetting) ;

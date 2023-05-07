@@ -1,4 +1,4 @@
-import React, { LegacyRef, Ref } from 'react'
+import React, {  Ref } from 'react'
 
 const Alarm = ({ref}:{ref:Ref<HTMLAudioElement> | undefined})=>{
     return (
