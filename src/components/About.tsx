@@ -15,7 +15,7 @@ function About() {
             <span className='border-b-2 border-red-400'>What</span> is Daily Focus?
         </span>
         <p className='mt-3 tracking-wider opacity-70 text-xs'>
-            Daily focus is small clone project from {" "}
+            Daily focus is small clone project from 
             <a href="https://pomofocus.io/" target='_blank' className='underline'>
             https://pomofocus.io/.
             </a>
